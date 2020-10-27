@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ders için denemeler</title>
+
+    <style>
+        body {
+            background-image: url(login-bg.jpg);
+            background-size: cover;
+        }
+        form {
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: 1.5%;
+            width: 250px;
+            cursor: pointer;;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+
+            padding: 25px 50px;
+           
+            /* yukarıda ki tek satırın çokklu olarak yazılması mümkündür aynı yapı margin için de geçerlidir;
+             padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+             */
+
+             box-shadow:rgba(87, 75, 75, 0.4) 5px 5px 25px;
+             transition:all 350ms;
+        }
+
+        .btn {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 10px 13px;
+            font-weight: 700;
+        
+        }
+
+        .btn:hover{
+            background-color:white;
+            transition:all 350ms;
+            color: gray;
+        }
+
+
+        .yukseklik {
+            height: 27px;
+        }
+
+        .genislik {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <audio src="./relaxing-music.mp3" hidden autoplay controls ></audio>
+
+    <form action="post" >
+        <label for="isim">İsim</label> <br>
+        <input type="text" id="isim" isim="isim" class="yukseklik genislik" required/> <br>
+
+        <label for="soyisim">Soyisim</label> <br>
+        <input type="text" id="soyisim" soyisim="soyisim" class="yukseklik genislik" required/> <br>
+
+        <label for="yas">Yaş</label> <br>
+        <input type="text" id="yas" yas="yas" class="yukseklik genislik" required><br>
+
+        <label for="anne adı">Anne Adı</label> <br>
+        <input type="text" anne_adı="anne adı" id="anne adı" class="yukseklik genislik" required> <br>
+
+        <label for="baba adı">Baba Adı</label> <br>
+        <input type="text" id="baba adı" baba_adı="baba adı" class="yukseklik genislik" required> <br>
+
+        <label for="adres">Adres</label> <br>
+        <input type="text" id="adres" adres="adres" class="yukseklik genislik" required><br>
+        
+        <label for="email">E-Mail</label> <br>
+        <input type="email" id="email" class="yukseklik genislik"required> <br> 
+        
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" class="yukseklik genislik"required> <br> <br>
+
+        <textarea name="bio" id="" cols="30" rows="5" placeholder="Biyografi Giriniz.." ></textarea> <br>
+
+        <label for="erkek">
+            <input type="radio" name="cinsiyet" id="erkek"> Erkek 
+        </label> 
+       
+        <label for="kadın">
+            <input type="radio" name="cinsiyet" id="kadın" required> Kadın
+        </label>
+        <br> <br>
+
+        <label for="futbol">
+            <input type="checkbox" name="futbol"> Futbol 
+        </label> 
+
+        <label for="yüzme">
+            <input type="checkbox" name="yüzme"> Yüzme 
+        </label> 
+        
+        <label for="fitness">
+            <input type="checkbox" name="fitness"> Fitness 
+        </label> <br> <br>
+
+        <progress id="file" value="32" max="100"> 32% </progress> <br> <br>
+
+
+        
+        <input type="submit" value="Verileri Gönder" style="cursor: pointer;" class="btn">
+        <input type="reset" value="Verileri Temizle" class="btn"> 
+    </form>
+
+</body>
+</html>
